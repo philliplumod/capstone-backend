@@ -61,7 +61,7 @@ export class CreateUserDto {
 
   @ApiProperty()
   @IsPhoneNumber('PH', {
-    message: 'Contact number must be a valid Philippine phone number',
+    message: 'Contact number must be a valid Philippine phone number +63',
   })
   @IsOptional()
   contactNumber?: string;
